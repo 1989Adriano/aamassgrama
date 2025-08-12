@@ -322,7 +322,7 @@ tfoot,#box5 {
 
 @media screen and (min-width: 1441px) and (max-width: 1900px){  
     #container{
-        grid-template-rows: 2vw 2vw 3vw 2vw 34.8vw 6vw ;
+        grid-template-rows: 2vw 2vw 3vw 1vw 34.8vw 6vw ;
     }
     p{
         font-size: 1vw;
@@ -371,6 +371,7 @@ tfoot,#box5 {
         
 
    
+
 
 
 
