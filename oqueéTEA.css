@@ -1,0 +1,413 @@
+* {
+    box-sizing: border-box;
+    padding:0;
+    margin:0;                
+}
+ul{
+    font-size: 1vw;
+    padding-left: 3vw;
+    padding-right: 2vw;
+}
+
+h2{
+    font-size: 3vw;
+    color: green;
+    text-align: center;
+}
+p {
+    font-size: 1vw;
+} 
+
+a,/* RELACIOADO AO PASSAR EM CIMA DOS LINKS MUDAR DE COR*/
+a:link {
+    color:  rgb(247, 246, 246);
+    text-decoration: none;    
+    padding: 0px 2vw;
+    
+}
+a:visited{
+    color:white;    
+    padding: 0px 2vw;     
+}
+a:hover {      
+    border-radius: 2vw;           
+    background-color: rgba(255, 0, 0, 0.852);  
+    color: white;
+}
+
+#container {
+    display: grid;            
+    grid-template-columns: 25vw 25vw 25vw 25vw;
+    grid-template-rows: 2vw 2vw 10vw 14vw 11.7vw  ;
+} 
+
+/* Referente a  Nav*/
+#menu {
+    list-style: none;
+    justify-content:center; 
+    font-size: 1.2vw;            
+    display: flex;                    
+    background-color: blue;             
+} 
+/* Referente a Nav*/
+#box4 { 
+    grid-column-start:1 ;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 2;                     
+}
+
+/* Referente Li do Texto( Comportamento "centro da tela)*/
+#ul2{        
+    list-style-image: url(imagens/peçaQuebracabeça_Amarela.png);
+}   
+#ul3{      
+    list-style-image: url(imagens/peçaQuebracabeça_roxo.png);
+}  
+#ul4{     
+    list-style-image: url(imagens/peçaQuebracabeçaVerde.png);
+}       
+
+/* posição do quebra-cabeça verde*/
+#box1 {   
+    grid-column-start:4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end:5;      
+    margin-top: 8%;
+    width: 60%;
+    margin-left: 10%;       
+}  
+/* posição do quebra-cabeça amarelo*/
+#box2{
+    justify-self: center;
+    grid-column-start:1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end:5;
+    width: 25%;
+    margin-top: 45%;
+}
+
+/* posição do conjunto de  quebra-cabeça v*/
+#box3 {   
+    grid-column-start:2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end:3;
+    width: 60%;
+    justify-self: center;
+    margin-top: 5%;       
+}
+/* Referente ao Titulo "O que é TEA?"*/
+#box5 {    
+    text-align: justify; 
+    padding: 2vw;     
+    grid-column-start:1 ;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;            
+}
+/* Referente ao Titulo "Saiba"*/
+#box6 {    
+    text-align: justify; 
+    padding-right: 2vw; 
+    padding-left: 2vw;     
+    grid-column-start:4 ;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;    
+    margin-top: 35%;                  
+}
+
+/* Referente ao Titulo "Comportamento"*/
+#box7 {
+    text-align: justify; 
+    padding-top: 2vw;
+    padding-right: 2vw;
+    padding-left: 2vw;     
+    grid-column-start:2;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 6;                 
+}
+
+/* Referente ao Rodapé*/    
+tfooter, #box8 {
+    grid-column-start:1 ;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 6;  
+    border-top-left-radius:2vw ; 
+    border-top-right-radius:2vw; 
+    text-align: center;            
+    font-size: 1.8vw;  
+    margin-top: 4%; 
+    background-color: blue; 
+    color: white; 
+}
+
+/* Para Celular*/
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    p{ 
+        font-size: 2.5vw;
+    }
+    #container {        
+        grid-template-rows: 2vw 2vw 10vw 60vw 95vw 30vw 14vw;
+        row-gap: 2vw;
+        margin-top: 2vw;        
+    } 
+    #menu{ 
+        font-size: 1.8vw;        
+    }
+ 
+    /*Titulos na cor Verde*/
+    #TEA{
+        font-size: 5vw;
+    } 
+   
+    /* posição do quebra-cabeça amarelo*/
+    #box2{
+        justify-self: center;
+        grid-column-start:1;
+        grid-column-end: 2;
+        grid-row-start: 7;
+        grid-row-end:7;
+        width: 35%;
+        margin-top: 0;
+    }
+    
+    /* posição do conjunto de  quebra-cabeça v*/
+    #box3 {   
+        grid-column-start:2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end:3;
+        width: 60%;
+        justify-self: center;
+        margin-top: 10%;       
+    }   
+    /* Referente ao Titulo "O que é TEA?"*/
+    #box5 {       
+        grid-column-start:1 ;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        grid-row-end: 4;            
+    }
+    /* Referente ao Titulo "Saiba"*/
+    #box6 {            
+        grid-column-start:1 ;
+        grid-column-end: 5;
+        grid-row-start: 6;
+        grid-row-end: 7;   
+        margin-top: 0;          
+    }
+
+    /* Referente ao Titulo "Comportamento"*/
+    #box7 {   
+        grid-column-start:1;
+        grid-column-end: 5;
+        grid-row-start: 5;
+        grid-row-end: 5;  
+        padding-top: 0;       
+                   
+    }
+    #ul2, #ul3,  #ul4{ /*peças de quebra-cabeça na "li"*/
+        font-size: 2.5vw; 
+        margin-left: 8vw;  
+    }
+    #ul2{        
+        list-style-image: url(imagens/amarelo2x1.png);        
+    }   
+    #ul3{          
+        list-style-image: url(imagens/verde2x1.png);         
+    }  
+    #ul4{         
+        list-style-image: url(imagens/roxo2x1.png);        
+    } 
+    tfooter, #box8 {
+        grid-column-start:1 ;
+        grid-column-end: 5;
+        grid-row-start: 7;
+        grid-row-end: 7;
+        font-size: 3vw;  
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    p{
+        font-size: 1.2vw;
+    } 
+    #container {        
+        grid-template-rows: 0vw 2vw 10vw 20vw 27vw 7vw;
+        row-gap: 2vw;
+    }
+    #menu{ 
+        font-size: 1.8vw;        
+    }   
+    
+    #ul2, #ul3,  #ul4{ /*peças de quebra-cabeça na "li"*/
+        font-size: 1.2vw;
+        padding: 0.5vw;         
+    }
+    #ul2{        
+        list-style-image: url(imagens/amarelo2x1.png);
+    }   
+    #ul3{        
+        list-style-image: url(imagens/verde2x1.png);
+    }  
+    #ul4{         
+        list-style-image: url(imagens/roxo2x1.png);
+    }
+    
+    /* posição do quebra-cabeça amarelo*/
+    #box2{
+        justify-self: center;
+        grid-column-start:1;
+        grid-column-end: 2;
+        grid-row-start: 5; 
+        grid-row-end:5;
+        width: 50%; 
+        padding-top: 10vw;  
+        
+    }
+    /* posição do conjunto de  quebra-cabeça */
+    #box3 {   
+        grid-column-start:2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end:3;
+        width: 60%;
+        justify-self: center;           
+    }
+    /* Referente ao Titulo "Saiba"*/
+    #box6 {            
+        grid-column-start:4 ;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        grid-row-end: 5;   
+        margin-top: 12vw;             
+    }
+    /* Referente ao Titulo "Comportamento"*/
+    #box7 {   
+        grid-column-start:2;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 6; 
+        padding-top: 0; 
+    }
+
+    tfooter, #box8 {
+    grid-column-start:1 ;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 7; 
+    margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px){
+    #container {        
+        grid-template-rows: 2vw 2vw 13vw 31vw 10vw ;
+    }
+    p{
+        font-size: 1.2vw;
+    } 
+         
+    #ul2, #ul3,  #ul4{ /*peças de quebra-cabeça na "li"*/
+        font-size: 1.1vw;
+        padding: 0.3vw;         
+    }
+    #ul2{        
+        list-style-image: url(imagens/amarelo2x1.png);
+    }   
+    #ul3{        
+        list-style-image: url(imagens/verde2x1.png);
+    }  
+    #ul4{         
+        list-style-image: url(imagens/roxo2x1.png);
+    }
+    
+    /* posição do quebra-cabeça amarelo*/
+    #box2{
+        justify-self: center;
+        grid-column-start:1;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end:5;        
+        width: 45%;   
+        margin-top: 4vw;      
+    }
+    /* posição do conjunto de  quebra-cabeça */
+    #box3 {   
+        grid-column-start:2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end:3;
+        width: 60%;
+        justify-self: center;           
+    }
+    
+    /* Referente ao Titulo "Saiba"*/
+    #box6 {            
+        grid-column-start:4 ;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        grid-row-end: 5;   
+        margin-top: 6vw;             
+    }
+    /* Referente ao Titulo "Comportamento"*/
+    #box7 {   
+        grid-column-start:2;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 6; 
+        padding-top: 0; 
+    }
+
+    tfooter, #box8 {
+    grid-column-start:1 ;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 6; 
+    margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 2560px){
+    #container {        
+        grid-template-rows: 2vw 2vw 10vw 22.7vw 7vw ;
+    }
+    p{
+        font-size: 0.9vw;
+    }
+    #ul2{        
+        list-style-image: url(imagens/amarelo2x1.png);
+    }   
+    #ul3{        
+        list-style-image: url(imagens/verde2x1.png);
+    }  
+    #ul4{         
+        list-style-image: url(imagens/roxo2x1.png);
+    }
+    /* posição do quebra-cabeça amarelo*/
+    #box2{
+        justify-self: center;
+        grid-column-start:1;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end:6;
+        width: 35%;   
+        margin-top: 4vw;      
+    }
+    tfooter, #box8 {
+        grid-column-start:1 ;
+        grid-column-end: 5;
+        grid-row-start: 6;
+        grid-row-end: 6; 
+        margin-top: 0;
+    }
+}
+
+
+

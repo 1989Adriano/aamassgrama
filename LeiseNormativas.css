@@ -1,0 +1,451 @@
+* {  
+    box-sizing: border-box;
+    padding:0;
+    margin:0;                
+}
+
+h2{
+    font-size: 4vw;
+    color: green;
+}
+
+p{
+    font-size: 1.2vw;
+} 
+
+a,  /* RELACIOADO AO PASSAR EM CIMA DOS LINKS MUDAR DE COR*/
+a:link {
+    color:  rgb(247, 246, 246);
+    text-decoration: none;
+    padding: 0px 2vw;   
+}
+a:visited{
+    color:white; 
+}
+
+a:hover {      
+    border-radius: 2vw;           
+    background-color: rgba(255, 0, 0, 0.852);  
+    color: white;
+}
+#container{
+    display: grid;            
+    grid-template-columns: 25vw 25vw 25vw 25vw;
+    grid-template-rows: 2vw 4vw 4vw 3vw 26.7vw 4.2vw ;
+}
+   
+/*UL da Nav*/
+#menu{
+    list-style: none;
+    justify-content:center; 
+    font-size: 1.2vw;            
+    display: flex;                    
+    background-color: blue;             
+} 
+ 
+/* Nav*/
+#box1 { 
+    grid-column-start:1 ;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 2;                     
+} 
+
+/*Todas as "#UL são relacionada as Imagens de Quebra-cabeça */
+#ul2 {
+    font-size: 1.7vw;             
+    color:green;
+    list-style-image: url(imagens/peçaQuebracabeçaVerde.png);
+}
+#ul3 {
+    font-size: 1.7vw;               
+    color:orange;
+    list-style-image: url(imagens/amarelo5x5.png);
+}
+
+#ul4 {
+    font-size:1.7vw;             
+    color:blue;
+    list-style-image: url(imagens/azul5x5.png);
+}
+
+#ul5 {
+    font-size:1.7vw;           
+    color:red;
+    list-style-image: url(imagens/vermelho5x5.png);
+}
+
+#ul6 {         
+    font-size:1.7vw;             
+    color:violet;
+    list-style-image: url(imagens/roxo5x5.png);
+}
+      
+
+/*Lista"UL" lado esquerdo da tela*/
+#box3 { 
+    grid-column-start:1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 7;   
+    padding-top: 2vw;
+    border-top-left-radius: 2vw;  
+    padding-left: 5vw;   
+    background-color: rgba(222, 184, 135, 0.619);        
+}
+/*Lista"UL" lado Direito da tela*/
+#box4{
+    grid-column-start:3;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 7;     
+    padding-top: 2vw;
+    padding-left: 4vw;
+    padding-right: 1vw;
+    border-top-right-radius: 2vw; 
+    background-color: rgba(222, 184, 135, 0.619);           
+} 
+/*Titulo na cor verde*/
+#box2 {
+    grid-column-start:1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;   
+    text-align: center;          
+}
+
+/*MSG "Impotante:"*/ 
+#box5 { 
+    grid-column-start:1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 9;    
+    text-align: center;
+    border-top-left-radius:2vw ; 
+    border-top-right-radius:2vw; 
+    padding-top: 1vw;
+    padding-right: 2vw;
+    padding-left: 2vw;  
+    font-size: 0.9vw;     
+    background-color: orange;
+}
+
+tfooter, #box6 {
+    grid-column-start:1 ;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 9;  
+    border-top-left-radius:2vw ; 
+    border-top-right-radius:2vw; 
+    text-align: center;            
+    font-size: 1.8vw;  
+    margin-top: 4%; 
+    background-color: blue; 
+    color: white;   
+}   
+
+/*Para Celular*/
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    #container{   
+        grid-template-columns: 25vw 25vw 25vw 25vw;       
+        grid-template-rows: 2vw 5vw 10vw 67vw 76vw 6vw 9vw;       
+        margin-top: 2vw;
+        margin-bottom:2vw;  
+        row-gap: 2vw;
+    }
+    
+    h2{
+        font-size: 6vw;
+    }
+    /*Referente ao aviso "importante(cor laranja)"*/
+    h3{
+        font-size: 2vw;
+    }
+    p{
+        font-size: 3vw;
+    } 
+    #menu{ 
+        font-size: 1.8vw;        
+    }        
+
+    /*Todas as "#UL são relacionada as Imagens de Quebra-cabeça */
+    #ul2,  #ul3,  #ul4,  #ul5,  #ul6 {
+        font-size: 3.5vw; 
+        padding-top:1vw;       
+    } 
+    #ul2 {
+        list-style-image: url(imagens/verde2x1.png);
+    }
+    #ul3 {
+        list-style-image: url(imagens/amarelo2x1.png);
+    }
+    #ul4 {     
+        list-style-image: url(imagens/azul2x1.png);
+    }
+    #ul5 {     
+        list-style-image: url(imagens/vermleho2x1.png);
+    }
+    #ul6 {  
+        list-style-image: url(imagens/roxo2x1.png);
+    }
+
+    /*Lista"UL" lado esquerdo da tela*/
+    #box3 { 
+        text-align: justify; 
+        grid-column-start:1;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        grid-row-end: 4;          
+        padding-left: 10vw;
+        padding-right: 2vw;      
+        padding-bottom: 5vw; 
+        background-color: white;
+    }
+    /*Lista"UL" lado Direito da tela*/
+    #box4{
+        text-align: justify; 
+        grid-column-start:1;
+        grid-column-end: 5;
+        grid-row-start: 5;
+        grid-row-end: 5; 
+        background-color: white; 
+        padding-right: 0;  
+        padding-left: 10vw;
+        padding-right: 2vw;
+        padding-top: 3vw;                     
+    }    
+
+    /*MSG "Impotante:"*/ 
+    #box5 { 
+        grid-column-start:1;
+        grid-column-end: 5;
+        grid-row-start: 6;
+        grid-row-end: 8; 
+        padding-top: 0;           
+    }
+    tfooter, #box6 {
+        grid-column-start:1 ;
+        grid-column-end: 7;
+        grid-row-start: 7;
+        grid-row-end: 7;     
+        margin-top: 0; 
+        font-size: 2.5vw;
+    }  
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    #container{
+        grid-template-rows: 0vw 4vw 14vw 63vw 62vw 8vw 6vw;
+        row-gap: 2vw;
+    }
+    #menu{ 
+        font-size: 1.9vw;        
+    } 
+    
+    h2{
+        font-size: 6vw;        
+    }
+    h3{
+        font-size: 2vw;
+    }
+    p{
+        font-size: 2vw;
+        
+    }
+    
+    /*Todas as "#UL são relacionada as Imagens de Quebra-cabeça */
+    #ul2, #ul3, #ul4, #ul5, #ul6 {
+        font-size: 4vw; 
+        padding-top: 0;        
+    }  
+    #ul2 {
+        list-style-image: url(imagens/peçaQuebracabeçaVerde.png);
+    }
+    #ul3 {
+        list-style-image: url(imagens/amarelo5x5.png);
+    }
+    #ul4 {
+        list-style-image: url(imagens/azul5x5.png);
+    }
+    #ul5 {
+        list-style-image: url(imagens/vermelho5x5.png);
+    }
+    #ul6 { 
+        list-style-image: url(imagens/roxo5x5.png);
+    }
+    
+    /*5 primeiros itens da lista Lista"UL" */
+    #box3 { 
+        grid-column-start:1;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        grid-row-end: 4; 
+        background-color: white; 
+        padding-left: 10vw;
+        padding-right: 2vw;        
+    }
+    /*4 ultimos itens da Lista"UL"*/
+    #box4{
+        grid-column-start:1;
+        grid-column-end: 5;
+        grid-row-start: 5;
+        grid-row-end: 5;  
+        background-color: white;  
+        padding-right: 0;  
+        padding-left: 10vw;
+        padding-right: 0;
+                  
+    } 
+    /*Titulo na cor verde*/
+    #box2 {
+        grid-column-start:1;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+
+    /*MSG "Impotante:"*/ 
+    #box5 { 
+        grid-column-start:1;
+        grid-column-end: 5;
+        grid-row-start: 6;
+        grid-row-end: 8;
+        padding-top: 0;
+    }
+
+    tfooter, #box6 {
+        grid-column-start:1 ;
+        grid-column-end: 7;
+        grid-row-start: 7;
+        grid-row-end: 7;     
+        margin-top: 0;        
+    }   
+}
+@media screen and (min-width: 1025px) and (max-width: 1440px){
+    #container{   
+        grid-template-rows: 2vw 4vw 8vw 52vw 5vw;
+    }
+    h2{
+        font-size: 4vw;
+    }
+    h3{
+        font-size: 1.5vw;        
+    }
+    p{
+    font-size: 1.3vw;
+    }
+     
+    /*Todas as "#UL são relacionada as Imagens de Quebra-cabeça */
+    #ul2, #ul3, #ul4, #ul5, #ul6 {
+        font-size: 1.8vw;     
+    }    
+    /*Lista"UL" lado esquerdo da tela*/
+    #box3 {
+        text-align: justify; 
+        grid-column-start:1;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 6; 
+        background-color: white;   
+        padding-left: 8vw;
+        padding-right:2vw;
+        padding-top: 3vw;       
+    }
+    /*Lista"UL" lado Direito da tela*/
+    #box4{
+        text-align: justify;
+        grid-column-start:3;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        grid-row-end: 6;
+        background-color: white;   
+        padding-bottom:8vw;  
+        padding-left: 8vw;
+        padding-right: 3vw;
+        padding-top: 4vw; 
+    }    
+
+    /*MSG "Impotante:"*/ 
+    #box5 { 
+        grid-column-start:1;
+        grid-column-end: 5;
+        grid-row-start: 5;
+        grid-row-end: 14;   
+        padding-top: 1vw;
+    }
+
+    tfooter, #box6 {
+        grid-column-start:1 ;
+        grid-column-end: 7;
+        grid-row-start: 12;
+        grid-row-end: 12;     
+        margin-top: 0;         
+    }   
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1900px){
+    #container{   
+    grid-template-rows: 2vw 2vw 5vw 34vw 5vw 6vw;
+    }
+    p{
+        font-size: 1vw;
+    }
+    
+    /*Lista"UL" lado esquerdo da tela*/
+    #box3 { 
+        grid-column-start:1;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 7; 
+        padding-left: 6vw;
+        padding-right: 0;
+        padding-top: 1vw; 
+        padding-bottom: 5vw; 
+    }
+    /*Lista"UL" lado Direito da tela*/
+    #box4{
+        grid-column-start:3;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        grid-row-end: 7;  
+        padding-right: 0;  
+        padding-left: 6vw;
+        padding-right: 2vw;
+        padding-top: 1vw; 
+    }   
+
+    /*MSG "Impotante:"*/ 
+    #box5 { 
+        grid-column-start:1;
+        grid-column-end: 5;
+        grid-row-start: 5;
+        grid-row-end: 7;     
+        padding-top: 1vw;   
+    }
+    /*Cada UL referece a uma cor/peça do quebra cabeça na Lista*/
+    #ul2,  #ul3,  #ul4,  #ul5,  #ul6 {
+        font-size: 1.4vw;
+    }
+    
+    tfooter, #box6 {
+        grid-column-start:1 ;
+        grid-column-end: 7;
+        grid-row-start: 6;
+        grid-row-end: 6;     
+        margin-top: 0;         
+    }        
+} 
+@media screen and (min-width: 1901px){  
+    #container{   
+    grid-template-rows: 2vw 4vw 7vw 40vw 5vw 6vw;
+    }
+    #ul2,  #ul3,  #ul4,  #ul5,  #ul6 {
+        font-size: 1.4vw;
+    } 
+    p{
+        font-size: 1.1vw;
+    }
+
+}
+

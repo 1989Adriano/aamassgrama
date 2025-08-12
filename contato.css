@@ -1,0 +1,523 @@
+* {
+    box-sizing: border-box;
+    padding:0;
+    margin:0;                
+}
+
+ul{
+    padding-left: 4vw; 
+    padding-right: 2vw;
+    text-align: justify;    
+}
+
+h2{
+    font-size: 4vw;
+    color: green;
+    text-align: center;
+}
+/*Dados abaixo do nome da associação*/
+h3{
+    font-size: 2vw;
+    color:green;
+    text-align: center;
+    padding: 1vw;
+}
+/*Email*/
+h5 {
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+p {
+    font-size: 1vw;
+} 
+img{
+    width: 100%;
+}
+#img1, #img2 {
+    width: 50%;   
+}
+
+/* RELACIOADO AO PASSAR EM CIMA DOS LINKS MUDAR DE COR*/
+a:link {
+    color:  rgb(247, 246, 246);
+    text-decoration: none;
+    text-decoration-color: white;
+    padding: 0px 2vw;
+    border: none;
+}
+a:visited{
+    color:white;
+    padding: 0px 2vw;     
+}
+/*Referente a barra de NAV*/
+/*foi criado essa id para evitar que a backgroun em vermelho saia no img do instagram,whats e facebook*/
+#a:hover {      
+    border-radius: 2vw;           
+    background-color: rgba(255, 0, 0, 0.852);  
+    color: white;
+}
+
+#container {
+    display: grid;            
+    grid-template-columns: 25vw 25vw 25vw 25vw;
+    grid-template-rows: 2vw 1vw 9.8vw 8.7vw 6Vw 10.9vw 5.3vw ;
+} 
+/*Div lado esquerdo da tela*/
+#box1 {
+    grid-column-start:1 ;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 9;    
+    padding-top: 5vw;  
+}
+
+/*Informações "Chavepix,rua ..." */
+#box3 {
+    grid-column-start:2 ;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 6; 
+    padding-top: 5%;                         
+}
+
+/*Div Instagram e Facebook posição*/
+#box4 {    
+    grid-column-start:2 ;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 9;    
+    border-top-right-radius:2vw;
+    border-top-left-radius:2vw;
+    padding-top: 1vw;
+    background-color: orange;                      
+}
+
+/*Instagram e Facebook posição*/
+#ulrede{ 
+    list-style: none;
+    justify-content:center;              
+    display: flex;        
+}
+/*IMG das mãos*/
+#box5 {    
+    grid-column-start:2 ;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 8;
+    padding-left: 18vw;
+}
+
+/* Div da Barra de Nav*/
+#box2 {
+    justify-content:center; 
+    grid-column-start:1 ;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 2;                     
+}
+/* Ul da Barra de Nav*/
+#menu{ 
+    list-style: none;
+    justify-content:space-around; 
+    font-size: 1.2vw;            
+    display: flex;                       
+    background-color: blue;            
+}
+
+/*Cada UL referece a uma cor/peça do quebra cabeça na Lista*/
+#ul2 {
+    font-size: 1.4vw;              
+    color:green;
+    list-style-image: url(imagens/peçaQuebracabeçaVerde.png);
+}
+
+#ul3 {
+    font-size:1.4vw;   
+    padding-top: 1.6vw;            
+    color:orange;
+    list-style-image: url(imagens/amarelo5x5.png);
+}
+#ul5 {         
+    font-size: 1.4vw;     
+    color:red;
+    list-style-image: url(imagens/vermelho5x5.png);
+}
+#ul6{
+    font-size: 1.4vw;       
+    color:violet;
+    list-style-image: url(imagens/roxo5x5.png);
+}
+
+/* Referente ao Rodapé*/    
+tfooter, #box6 {
+    grid-column-start:1 ;
+    grid-column-end: 5;
+    grid-row-start: 8;
+    grid-row-end: 8;  
+    border-top-left-radius:2vw ; 
+    border-top-right-radius:2vw; 
+    text-align: center;            
+    font-size: 1.8vw;     
+    background-color: blue; 
+    color: white; 
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    #container { 
+        grid-template-columns: 25vw 25vw 25vw 25vw;     
+        grid-template-rows: 4vw 2vw 11vw 40vw 8vw 60vw 44vw 9vw 9vw;
+        margin-top: 2vw;
+        margin-bottom:2vw; 
+    }    
+    h3{
+        font-size: 5vw;        
+    }
+    h5{
+        font-size: 3vw;
+        padding-top: 0;
+    }
+    h2{
+        font-size: 6vw;       
+    }
+    /*img do insta, face e whats*/
+    img{
+        width: 100%;
+    }
+   
+    #menu{         
+        justify-content:center;   
+        font-size: 1.8vw;        
+    }    
+     /*img do insta, face e whats*/
+    #img1, #img2 {
+        width: 20%;
+    }
+    /*conjunto de "Li"*/
+    #box1 {
+        grid-column-start:1 ;
+        grid-column-end: 5;
+        grid-row-start: 6;
+        grid-row-end: 8;
+        border-top-left-radius: 2vw;    
+    }
+    /*Informações "Chavepix,rua ..." */
+    #box3 {
+        grid-column-start:1 ;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        grid-row-end: 4;  
+    }
+    /*Div Instagram e Facebook posição*/
+    #box4 {    
+        grid-column-start:1 ;
+        grid-column-end: 5;
+        grid-row-start: 8;
+        grid-row-end: 10; 
+        padding-left: 24vw;
+        padding-top: 1vw;  
+        border-top-left-radius: 2vw;     
+    }
+    /*IMG das mãos*/
+    #box5 {    
+        grid-column-start:1 ;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 8;
+    }
+
+    /*Cada UL referece a uma cor/peça do quebra cabeça na Lista*/
+    #ul2,  #ul3,  #ul4,  #ul5,  #ul6{
+        font-size: 4vw;              
+        padding-bottom: 5vw;
+        margin-left: 5vw;
+        margin-right: 2vw;
+        text-align: justify;
+    }
+    #ul2 {
+        list-style-image: url(imagens/verde2x1.png);
+    }
+    #ul3 {
+        list-style-image: url(imagens/amarelo2x1.png);
+    }   
+    #ul5 {     
+        list-style-image: url(imagens/vermleho2x1.png);
+    }
+    #ul6{
+        list-style-image: url(imagens/roxo2x1.png);
+    }
+
+    /* Referente ao Rodapé*/    
+    tfooter, #box6 {
+        grid-column-start:1 ;
+        grid-column-end: 5;
+        grid-row-start: 9;
+        grid-row-end: 9;
+        font-size: 2.5vw;       
+    }
+} 
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    #container {    
+        grid-template-rows: 2vw 2vw 10vw 35vw 26vw 26vw 32vw 8vw 7vw;        
+    }
+    ul{
+        padding-left: 10vw;
+    }
+    h3, h5{
+        font-size: 2.5vw;
+    }
+    h2{
+        font-size: 5vw;
+    }
+    img{
+        width: 100%;
+    }
+     
+    #img1, #img2, #img3 {
+        width: 30%;    }
+    #menu{ 
+        list-style: none;
+        justify-content:center; 
+        padding-left: 0;
+        font-size: 1.8vw;  
+    }
+    /*como voce pode ajudar*/  
+    #box1 {
+        grid-column-start:1 ;
+        grid-column-end: 5;
+        grid-row-start: 5;
+        grid-row-end: 8;
+        border-top-left-radius: 2vw;
+    
+    }
+    /*Informações "Chavepix,rua ..." */
+    #box3 {
+        grid-column-start:1 ;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 4;                         
+    }
+    /*Div Instagram e Facebook posição*/
+    #box4 {    
+        grid-column-start:2 ;
+        grid-column-end: 4;
+        grid-row-start: 8;
+        grid-row-end: 8; 
+              
+    }
+
+    /*IMG das mãos*/
+    #box5 {    
+        grid-column-start:2 ;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 6;
+        padding-left: 0;
+    }     
+
+    /*Cada UL referece a uma cor/peça do quebra cabeça na Lista*/
+    #ul2,  #ul3,  #ul4,  #ul5,  #ul6{
+        font-size: 2.5vw;              
+        padding-bottom: 5vw;
+    }
+    #ul2 {       
+        list-style-image: url(imagens/peçaQuebracabeçaVerde.png);
+    }
+    #ul3 {
+        list-style-image: url(imagens/amarelo5x5.png);
+    }   
+    #ul5 { 
+        list-style-image: url(imagens/vermelho5x5.png);
+    }
+    #ul6{
+        list-style-image: url(imagens/roxo5x5.png);
+    }
+
+    /* Referente ao Rodapé*/    
+    tfooter, #box6 {
+        grid-column-start:1 ;
+        grid-column-end: 5;
+        grid-row-start: 9;
+        grid-row-end: 9;         
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px){
+    #container {
+        grid-template-rows: 2vw 1vw 12vw 10vw 20vw 40vw 5vw 7vw;
+    }
+    ul{
+        padding-left: 10vw;       
+    }
+    h3{
+        font-size: 3vw;
+        padding: 0;
+        padding-bottom: 1vw;
+    }
+    h5{
+        font-size: 3.5;
+       
+    }
+    h2{
+        font-size: 4.7vw;
+    }
+    img{
+        width: 100%;        
+    }
+    /*IMG das mãos*/
+    #box5 {    
+        grid-column-start:2 ;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 6;        
+    } 
+    #img1, #img2 {
+        width: 20%;        
+    }
+    #menu{ 
+        list-style: none;
+        justify-content:center; 
+        padding-left: 0;
+    }
+   
+    #box1 {
+        grid-column-start:1 ;
+        grid-column-end: 5;
+        grid-row-start: 6;
+        grid-row-end: 7;        
+        padding-top: 0;   
+    }
+    /*Informações "Chavepix,rua ..." */
+    #box3 {
+        grid-column-start:1 ;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 6; 
+        padding-top: 0;                        
+    }
+    /*Div Instagram e Facebook posição*/
+    #box4 {    
+        grid-column-start:1 ;
+        grid-column-end: 5;
+        grid-row-start: 7;
+        grid-row-end: 9; 
+        padding-left: 2vw; 
+        border-top-left-radius: 2vw; 
+        padding-top: 0.5vw;  
+    }
+    /*Cada UL referece a uma cor/peça do quebra cabeça na Lista*/
+    #ul2,  #ul3,  #ul5,  #ul6 {
+        font-size: 2vw;
+        padding-top: 1.5vw; 
+    } 
+    #ul2 {
+        list-style-image: url(imagens/peçaQuebracabeçaVerde.png);
+    }
+
+    #ul3 {
+        list-style-image: url(imagens/amarelo5x5.png);
+    }
+    #ul5 { 
+        list-style-image: url(imagens/vermelho5x5.png);
+    }
+    #ul6{
+        list-style-image: url(imagens/roxo5x5.png);
+    }
+    /*Posição da img*/
+    #box5 {     
+        grid-column-start:2 ;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 6;    
+    }
+
+    /* Referente ao Rodapé*/    
+    tfooter, #box6 {
+        grid-column-start:1 ;
+        grid-column-end: 5;
+        grid-row-start: 8;
+        grid-row-end: 8;  
+    }    
+}
+@media screen and (min-width: 1441px) and (max-width: 1900px){
+    #container {        
+        grid-template-rows: 2vw 1vw 6vw 6vw 12vw 12vw ;
+    }
+
+    h2{
+        font-size: 2.5vw;
+    }
+
+    img{
+        width: 90%;
+        margin-left: 7vw;
+    }
+
+    /*IMG das mãos*/
+    #box5 {     
+        grid-column-start:1 ;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 7;    
+    }   
+    /*Referente ao tamanho das img insta, facebook e whats*/
+    #img1, #img2 {
+        width: 15%;       
+    }
+    /*Div lado esquerdo da tela*/
+    #box1 {
+        grid-column-start:1 ;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 7;    
+    }
+    /*Informações "Chavepix,rua ..." */
+    #box3 {
+        grid-column-start:2 ;
+        grid-column-end: 4;
+        grid-row-start: 5;
+        grid-row-end: 5;                         
+    }
+    /*Div Instagram e Facebook posição*/
+    #box4 {    
+        grid-column-start:2 ;
+        grid-column-end: 4;
+        grid-row-start: 7;
+        grid-row-end: 7; 
+        padding-right:8vw;    
+    }
+    
+    /*Cada UL referece a uma cor/peça do quebra cabeça na Lista*/
+    #ul2,  #ul3,  #ul4,  #ul5,  #ul6 {
+        font-size:0.9vw;
+        margin-left: 2vw;
+        padding-top: 0;     
+    } 
+
+    /* Referente ao Rodapé*/    
+    tfooter, #box6 {
+        grid-column-start:1 ;
+        grid-column-end: 5;
+        grid-row-start: 8;
+        grid-row-end: 8;
+        font-size: 2vw;        
+    }
+}
+@media screen and (min-width: 1901px){
+    #container {        
+        grid-template-rows: 2vw 1vw 7vw 7vw 8vw 10.5vw 6.5vw;
+    }
+     /*Referente ao tamanho das img insta, facebook e whats*/
+    #img1, #img2 {
+        width: 25%;   
+        margin-left: 4vw;  
+    }
+    #ul2,  #ul3,  #ul4,  #ul5,  #ul6 {
+        font-size:1vw;
+        margin-left: 2vw;
+        padding-top: 0;     
+    } 
+}
+
+
