@@ -438,7 +438,7 @@ tfooter, #box6 {
 } 
 @media screen and (min-width: 1901px){  
     #container{   
-    grid-template-rows: 2vw 4vw 7vw 40vw 5vw 6vw;
+    grid-template-rows: 2vw 2vw 5vw 34vw 5vw 6vw;
     }
     #ul2,  #ul3,  #ul4,  #ul5,  #ul6 {
         font-size: 1.4vw;
@@ -448,4 +448,5 @@ tfooter, #box6 {
     }
 
 }
+
 
