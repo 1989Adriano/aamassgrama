@@ -511,7 +511,7 @@ tfooter, #box6 {
 }
 @media screen and (min-width: 1901px){
     #container {        
-        grid-template-rows: 2vw 1vw 7vw 7vw 8vw 11vw 6.5vw;
+        grid-template-rows: 2vw 1vw 7vw 7vw 8vw 11.5vw 6.5vw;
     }
     #menu{ 
         list-style: none;
@@ -529,6 +529,7 @@ tfooter, #box6 {
         padding-top: 0;     
     } 
 }
+
 
 
 
