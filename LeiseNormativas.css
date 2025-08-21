@@ -384,7 +384,7 @@ tfooter, #box6 {
     }   
 }
 
-@media screen and (min-width: 1441px) and (max-width: 1900px){
+@media screen and (min-width: 1441px){
     #container{   
     grid-template-rows: 2vw 2vw 3vw 34.8vw 5vw 6vw;
     }
@@ -434,8 +434,10 @@ tfooter, #box6 {
         grid-row-start: 6;
         grid-row-end: 6;     
         margin-top: 0;         
-    }        
+    } 
+
 } 
+
 
 
 
