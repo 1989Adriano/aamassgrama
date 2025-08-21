@@ -506,7 +506,7 @@ tfooter, #box6 {
 }
 @media screen and (min-width: 1901px){
     #container {        
-        grid-template-rows: 2vw 1vw 7vw 7vw 8vw 11.5vw 6.5vw;
+        grid-template-rows: 2vw 1vw 7vw 7vw 8vw 12vw 6.5vw;
     }
      /*Referente ao tamanho das img insta, facebook e whats*/
     #img1, #img2 {
@@ -519,6 +519,7 @@ tfooter, #box6 {
         padding-top: 0;     
     } 
 }
+
 
 
 
