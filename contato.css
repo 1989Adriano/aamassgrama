@@ -508,6 +508,11 @@ tfooter, #box6 {
     #container {        
         grid-template-rows: 2vw 1vw 7vw 7vw 8vw 12vw 6.5vw;
     }
+    #menu{ 
+        list-style: none;
+        justify-content:center; 
+        padding-left: 0;
+    }
      /*Referente ao tamanho das img insta, facebook e whats*/
     #img1, #img2 {
         width: 25%;   
@@ -519,6 +524,7 @@ tfooter, #box6 {
         padding-top: 0;     
     } 
 }
+
 
 
 
