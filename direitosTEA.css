@@ -320,7 +320,7 @@ tfoot,#box5 {
     }    
 }
 
-@media screen and (min-width: 1441px) and (max-width: 1900px){  
+@media screen and (min-width: 1441px) {  
     #container{
         grid-template-rows: 2vw 2vw 3vw 2vw 34.8vw 6vw ;
     }
@@ -335,14 +335,7 @@ tfoot,#box5 {
     #box3, #box4 {      
         padding-left: 8vw; 
         padding-right: 2vw;
-    }
-   
-}
-@media screen and (min-width: 1901px){  
-    #container{
-        grid-template-rows: 2vw 2vw 3vw 2vw 35vw 7vw ;
-    }
-    
+    }    
 }
 
 
@@ -371,6 +364,7 @@ tfoot,#box5 {
         
 
    
+
 
 
 
